@@ -1,37 +1,50 @@
 # AI Test Case Generator
 
-An AI-assisted quality engineering tool that converts requirements, user stories, acceptance criteria, or application context into structured software test cases.
+A GenAI QA portfolio project that converts requirements, user stories, and acceptance criteria into structured software test cases.
 
 ## What this project demonstrates
 
-- LLM-powered test design
+- LLM-assisted test design
 - Prompt engineering for QA workflows
-- Positive, negative, boundary, and edge-case coverage
-- Functional and regression test generation
-- Structured outputs for reusable test assets
-- Validation of generated test cases before execution
+- Positive, negative, boundary, validation, security, usability, and regression coverage
+- Structured JSON output
+- Streamlit UI
+- Local fallback mode that works without API credentials
+- Optional OpenAI or Azure OpenAI integration
+- Automated tests
 
-## Recommended repository sections
+## Quick start
 
-```text
-ai-test-case-generator/
-├── src/
-├── tests/
-├── prompts/
-├── sample_inputs/
-├── sample_outputs/
-├── docs/
-├── screenshots/
-├── requirements.txt or package.json
-├── .env.example
-├── .gitignore
-└── README.md
+```bash
+python -m venv .venv
 ```
 
-## Suggested README additions after source import
+Windows:
 
-Add the exact tech stack, architecture, installation steps, supported input formats, model/provider configuration, example generated test cases, screenshots, evaluation approach, limitations, and future improvements based on the real project files.
+```bash
+.venv\Scripts\activate
+```
 
-## Security
+Install:
 
-Never commit API keys. Use environment variables and include only `.env.example` with placeholder values.
+```bash
+pip install -r requirements.txt
+```
+
+Run:
+
+```bash
+streamlit run app.py
+```
+
+The app works immediately in Local Demo Mode.
+
+## Optional LLM setup
+
+Copy `.env.example` to `.env` and add your own OpenAI or Azure OpenAI credentials.
+
+Never commit `.env` or real API keys.
+
+## Suggested GitHub topics
+
+`ai-testing` `llm-testing` `software-testing` `test-automation` `prompt-engineering` `quality-assurance` `generative-ai` `python` `streamlit`
