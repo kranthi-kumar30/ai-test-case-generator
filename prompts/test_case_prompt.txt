@@ -1,0 +1,19 @@
+Generate up to {max_cases} software test cases for the following requirement.
+
+Requirement:
+{requirement}
+
+Coverage types:
+{coverage}
+
+Return ONLY valid JSON as an array. Each object must contain:
+test_case_id, title, priority, test_type, preconditions, steps, expected_result, test_data.
+
+Rules:
+1. Cover the requested test types.
+2. Use realistic QA language.
+3. Keep each test case independently executable.
+4. Include positive and negative behavior where relevant.
+5. Do not invent unsupported business rules.
+6. Use arrays for preconditions and steps.
+7. Return no markdown or commentary outside JSON.

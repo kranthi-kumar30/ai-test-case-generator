@@ -1,0 +1,18 @@
+[
+  {
+    "test_case_id": "TC-001",
+    "title": "Verify successful login with valid input",
+    "priority": "High",
+    "test_type": "Positive",
+    "preconditions": [
+      "User is on the relevant application screen."
+    ],
+    "steps": [
+      "Enter valid input.",
+      "Submit the workflow.",
+      "Observe the application response."
+    ],
+    "expected_result": "The login workflow completes successfully.",
+    "test_data": "Valid values that satisfy the acceptance criteria."
+  }
+]

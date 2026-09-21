@@ -1,0 +1,8 @@
+As a customer, I want to log in using email and password so that I can access my account.
+
+Acceptance criteria:
+- Email is required and must be valid.
+- Password is required.
+- Successful login redirects to the dashboard.
+- Invalid credentials show an error.
+- Account locks after five consecutive failed attempts.
